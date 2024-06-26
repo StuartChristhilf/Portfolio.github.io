@@ -1,104 +1,102 @@
-:root {
-    --text: rgb(225, 243, 249);
-    --background: rgb(33, 33, 33);
-    --primary: rgb(21, 59, 75);
-    --secondary: rgb(21, 156, 134);
-    --accent: rgb(101, 190, 121);
-}
+/* styles.css */
 
-body {
-    font-family: Arial, sans-serif;
-    color: var(--text);
-    background-color: var(--background);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 50%), url('/images/backgrounds/wave-pattern.png');
-    background-size: cover;
-    background-attachment: fixed;
+/* General styles */
+body, html {
     margin: 0;
     padding: 0;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-}
-
-header h1 {
-    color: var(--text);
-}
-
-nav a {
-    color: var(--text);
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--accent);
-    color: var(--background);
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: var(--secondary);
-}
-.card-container {
-    display: flex;
-    justify-content: center; /* Center the cards horizontally */
-    flex-wrap: wrap;
-    max-width: 800px; /* Adjust as needed */
-    margin: 0 auto; /* Center the container horizontally */
-}
-
-.card {
-    position: relative;
-    width: calc(33.33% - 20px); /* Adjust the width of each card */
-    margin: 10px;
-    overflow: hidden;
-}
-
-.card img {
-    width: 100%;
-    transition: transform 0.5s;
-}
-
-.card:hover img {
-    transform: scale(1.1); /* Just a simple hover effect */
-}
-
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, var(--primary), rgba(50, 188, 181, 0.581)); /* Adjust colors as needed */
-    padding: 20px;
-    box-sizing: border-box;
-    opacity: 0;
-    transition: opacity 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: 'Press Start 2P', cursive; /* Pixelated font for retro look */
 }
 
-.card:hover .overlay {
+/* Boot-Up Screen */
+.boot-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: background-color 1s; /* Add transition for background color */
+}
+
+.boot-text {
+    color: white;
+    font-size: 24px;
+}
+
+/* Flash Animation */
+.flash {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: white;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: width 0.5s, height 0.5s, opacity 1s; /* Add transition for opacity */
+}
+
+.flash.expand {
+    width: 200%;
+    height: 200%;
     opacity: 1;
 }
 
-.overlay h2{
-    margin: 0;
-    color: var(--text); /* Text color */
-    font-family: 'Kosugi';
-    font-weight: 400;
+.flash.fade-out {
+    opacity: 0; /* Gradually reduce opacity to 0 */
 }
-.overlay p {
-    margin: 20;
-    color: var(--text); /* Text color */
-    font-family: 'Kosugi';
-    font-weight: 400;
+
+/* Main Content */
+.hidden {
+    display: none;
 }
+
+.main-content {
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+/* Fade to black */
+.fade-to-black {
+    background-color: black; /* Change background color to black */
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column; /* Stack avatar and navigation vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px; /* Space between avatar and navigation */
+}
+
+.home-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive; /* Retro video game font */
+    cursor: pointer;
+    margin: 20px 0; /* Add spacing between buttons */
+    transition: transform 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    transform: scale(1.2); /* Pop out effect */
+    color: #00FF00; /* Change color on hover, adjust as needed */
+}
+
+
