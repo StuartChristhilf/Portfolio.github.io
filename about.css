@@ -13,6 +13,7 @@ body, html {
     justify-content: center;
     align-items: center;
     position: relative; /* To position the back arrow relative to the page */
+    font-family: 'Press Start 2P', cursive; /* Retro video game font */
 }
 
 /* Back Arrow */
@@ -77,6 +78,7 @@ body, html {
 
 .profile-details {
     text-align: center;
+    font-size: 16px;
 }
 
 .profile-details h2 {
@@ -95,7 +97,7 @@ body, html {
 }
 
 .characteristics p {
-    margin-left: 22%;
+    margin-left: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,7 +109,7 @@ body, html {
     height: 20px;
     background-color: #333;
     border: 1px solid #555;
-    margin-left: 10%;
+    margin-left: 20%;
     position: absolute;
 }
 
