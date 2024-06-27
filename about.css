@@ -78,7 +78,7 @@ body, html {
 
 .profile-details {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .profile-details h2 {
@@ -97,7 +97,7 @@ body, html {
 }
 
 .characteristics p {
-    margin-left: 15%;
+    margin-left: 13%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +109,7 @@ body, html {
     height: 20px;
     background-color: #333;
     border: 1px solid #555;
-    margin-left: 20%;
+    margin-left: 25%;
     position: absolute;
 }
 
