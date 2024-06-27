@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Character Status</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Back Arrow -->
+    <a href="../index.html" class="back-arrow">&larr;</a>
+
+    <div class="about-me-container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="avatar">
+                <img src="../images/logos/8Bitavatar.png" alt="8-bit Avatar">
+                <button class="view-real-pic" onclick="openModal()">Real Life</button>
+            </div>
+            <div class="profile-details">
+                <h2>About Me</h2>
+                <p>Name: Stuart Christhilf</p>
+                <p>Title: Engineer</p>
+                <p>Gender: Male</p>
+                <p>Level: 18</p>
+                <p>Eye Color: Hazel</p>
+                <p>Hair Color: Blonde</p>
+            </div>
+        </div>
+        <!-- Attributes Section -->
+        <div class="attributes-section">
+            <h2>Characteristics</h2>
+            <div class="characteristics">
+                <p>Skill 1: <span class="progress-bar"><span style="width: 70%;"></span></span></p>
+                <p>Skill 2: <span class="progress-bar"><span style="width: 50%;"></span></span></p>
+                <p>Skill 3: <span class="progress-bar"><span style="width: 80%;"></span></span></p>
+                <p>Mentality: <span class="progress-bar"><span style="width: 30%;"></span></span></p>
+                <p>Temperament: <span class="progress-bar"><span style="width: 60%;"></span></span></p>
+                <p>Behavior: <span class="progress-bar"><span style="width: 90%;"></span></span></p>
+                <br>
+                <br>
+                <div class="profile-details">
+                    <p>A current senior at Charlotte Latin High School</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="../images/logos/realPhoto.jpg" alt="Real Picture of Me">
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

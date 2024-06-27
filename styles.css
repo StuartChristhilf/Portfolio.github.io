@@ -73,7 +73,7 @@ body, html {
 }
 
 .avatar img {
-    width: 150px; /* Adjust size as needed */
+    width: 250px; /* Adjust size as needed */
     height: auto;
     margin-bottom: 20px; /* Space between avatar and navigation */
 }
@@ -96,7 +96,14 @@ body, html {
 
 .nav-button:hover {
     transform: scale(1.2); /* Pop out effect */
-    color: #00FF00; /* Change color on hover, adjust as needed */
+    color: #07ffe6; /* Change color on hover, adjust as needed */
 }
+
+.home-title-lightblue {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #07ffe6; /* Change color on hover, adjust as needed */
+}
+
 
 
