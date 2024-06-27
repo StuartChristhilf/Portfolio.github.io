@@ -79,6 +79,7 @@ body, html {
 .profile-details {
     text-align: center;
     font-size: 14px;
+    line-height: 25px;
 }
 
 .profile-details h2 {
