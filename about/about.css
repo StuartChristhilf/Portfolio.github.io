@@ -165,10 +165,26 @@ body, html {
 
 
 @media (max-width: 768px) {
+    
+        /* Back Arrow */
+    .back-arrow {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 0px;
+        font-family: 'Press Start 2P', cursive; /* Retro video game font */
+    }
+
+    .back-arrow:hover {
+        color: #14cfc0; /* Change color on hover */
+    }
+
     .about-me-container {
         flex-direction: column;
         width: 100%;
-        padding: 10px;
+        padding: 0px;
     }
 
     .profile-section, .attributes-section {
